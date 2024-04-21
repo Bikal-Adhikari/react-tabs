@@ -1,9 +1,5 @@
 
 
-#### JobInfo
-
-Create a JobInfo component to display the first job in the list. Use object destructuring to extract the relevant data from the job object. Display the company, dates, title, and duties, using the Duties component to render the list of duties.
-
 #### JobDuties
 
 In the Duties component, iterate over the array of duties and render each item. If you want to use icons, you will need to install the react-icons library.
