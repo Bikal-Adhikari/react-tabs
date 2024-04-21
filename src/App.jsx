@@ -14,7 +14,17 @@ const App = () => {
     setIsLoading(false);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetchJobs();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section className="jobs-center">
+        <div className="loading"></div>
+      </section>
+    );
+  }
   return <h2>Tabs Starter</h2>;
 };
 export default App;
